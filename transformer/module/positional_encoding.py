@@ -24,7 +24,7 @@ We also experimented with using learned positional embeddings [9] instead, and f
 versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version
 because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training
 
-原文：
+译文：
 由于我们的模型不包含递归和卷积层，为了使模型能够利用序列的顺序信息，我们必须向模型注入关于序列中令牌相对或绝对位置的信息。
 为此，我们在编码器和解码器堆栈的底部将“位置编码”添加到输入嵌入中。
 位置编码的维度与嵌入的维度相同（d_model），因此两者可以相加。
